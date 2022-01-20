@@ -19,7 +19,9 @@ width: 1000px;
 header {
     background-color: brown;
 }
-
+body .signup {
+    height: 50vh;
+}
 header .nav {
 border: 1px;
     padding: 10px 20px;
@@ -48,7 +50,7 @@ body .body{
     
 }
 body .signup{
-    background-color: rgb(10, 48, 0);
+    background-color: rgb(255, 255, 255);
 }
   table {
 align-items: center;
