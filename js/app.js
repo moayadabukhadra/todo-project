@@ -2,10 +2,11 @@
 
 var person = prompt ("please enter your name");
 
-
+console.log(person);
 var gender = prompt ("enter ur gender (male/female)");
 
 var age = prompt ("enter your age");
+console.log(age);
 while (age <= 0) {
     
  
@@ -21,18 +22,21 @@ if (age <= 0){
  }
 }
 
-confirm ("do you want to skip the welcoming message")
-
-if (gender == "male" ){
+ var skip = confirm ("do you want to skip the welcoming message")
+console.log(gender);
+console.log(skip);
+ 
+if (gender == "male" && skip == false ){
 
 alert ("hello Mr " + person);
 
-}else if (gender == "female"){
-alert ("Hello Ms " + person)
-}else {
-    alert ("Hello " + person);
+}else if (gender == "female" && skip == false ){
+alert ("Hello Ms " + person);
 }
-
+if  (gender == "" && skip == false ){
+alert ("Hello " + person );
+ 
+}
 
 
 
