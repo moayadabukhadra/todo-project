@@ -19,7 +19,7 @@ while (age <= 0) {
    } 
 
 function visit() {
-  visit =  prompt ("are you new to this website ?");
+  visit =  prompt ("are you new to this website (yes/no)?");
  
   
 }
@@ -30,31 +30,35 @@ if (visit == ""){
 }
 
 
-function color() {
-  color =   prompt ("what is your favorite color");
+function developr() {
+  developr =   prompt ("are you a developer (yes/no)");
 
 
 }
-color()
-if (color == ""){
-  color = "invaild";
+developr()
+if (developr == ""){
+  developr = "invaild";
 }
 
 
-function from() {
- from =  prompt ("where are you from");
+function student() {
+ student =  prompt ("are you a student (yes/no)");
 
 }
-from()
-if (from == ""){
-  from = "invaild";
+student()
+if (student == ""){
+  student = "invaild";
 }
 
 var skip = confirm ("do you want to skip the welcoming message")
-let answers = [age,gender,person,skip,visit,color,from]
- 
 
 
+var answers =[];
+
+answers.push(visit,developr,student);
+
+
+console.log(answers);
 
 
 
@@ -69,9 +73,16 @@ alert ("Hello Ms " + person);
 }
 else if  (gender == "invaild" && skip == false ){
 alert ("Hello " + person );
- var i =0;
 }
-for (i=0 ; i<=6 ; i++){
+
+
+
+
+
+
+ var i =0;
+
+for (i=0 ; i<=2 ; i++){
   console.log(answers[i]);
 }
 
